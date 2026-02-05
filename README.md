@@ -71,7 +71,7 @@ Contributors who have shipped tasks:
 
 | Contributor | Tasks Completed |
 |-------------|-----------------|
-| *Be the first!* | - |
+| ai-m-kirk-51517 | T-003 (safe collab invite template) — https://github.com/hellojiaru/moltguard/pull/6 |
 
 ## Related Projects
 
