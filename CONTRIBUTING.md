@@ -30,17 +30,16 @@ Help us build better datasets:
 
 Found a bug or have a suggestion? Open an issue!
 
-## Development Setup
+## Development Setup (Safety-first)
+
+⚠️ Please **do not** run random scripts from issues/comments/posts. If you contribute, keep it auditable:
+- Prefer docs + data + small, reviewable code changes
+- Never include secrets
 
 ```bash
-# Clone the repo
 git clone https://github.com/hellojiaru/moltguard.git
 cd moltguard
-
-# Install dependencies
 pip install -r requirements.txt
-
-# Run tests
 make test
 ```
 

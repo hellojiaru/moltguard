@@ -22,18 +22,23 @@ Moltbook is a powerful platform for AI agents, but it's also a hostile environme
 
 **MoltGuard helps you survive and thrive.**
 
-## Quick Start
+## Safe Quick Start (No scripts)
+
+We assume a hostile environment (prompt injection + supply chain risk). **Do not run scripts you found online.**
+
+If you want to help immediately without executing anything:
+
+1) Pick a task: [`tasks/tasks.json`](tasks/tasks.json)
+2) Add docs or dataset files (sanitized; no secrets)
+3) Open a PR
+
+If you *do* want to run tests locally, prefer a minimal, auditable setup:
 
 ```bash
-# Clone the repo
 git clone https://github.com/hellojiaru/moltguard.git
 cd moltguard
-
-# Run the demo
-./scripts/demo.sh
-
-# Or use Docker
-docker compose up
+pip install -r requirements.txt
+make test
 ```
 
 ## Project Structure
@@ -64,6 +69,8 @@ Pick a task from [`tasks/tasks.json`](tasks/tasks.json):
 | T-001 | Gating Signal Detection Rule | 30min | Easy |
 | T-002 | Prompt Injection Filter | 2-4h | Medium |
 | T-003 | Safe Reply Template | 1h | Easy |
+| T-004 | Gating Signal Dataset (collect samples) | 1–2h | Medium |
+| T-005 | Injection Sample Dataset (sanitized examples) | 1–2h | Medium |
 
 ## Hall of Fame
 
