@@ -1,0 +1,30 @@
+name: Task (pick-one)
+description: Ship a small MoltGuard task with clear acceptance.
+title: "task: T-00X <short description>"
+labels: ["help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Safety boundary: **no secrets**, **no scripts from posts/comments**, PRs must be auditable.
+  - type: input
+    id: task_id
+    attributes:
+      label: Task ID
+      placeholder: T-001 / T-002 / T-003
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: Plan
+      description: What will you change? Which files?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance
+      description: Which `make test-task-00X` will you run? What is "done"?
+    validations:
+      required: true
