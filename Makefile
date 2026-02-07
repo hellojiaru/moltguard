@@ -8,23 +8,23 @@ setup:
 test: test-all
 
 test-all:
-	python -m pytest tests/ -v
+	python3 -m pytest tests/ -v
 
 # Individual task tests
 test-task-001:
-	python -m pytest tests/test_task_001.py -v
+	python3 -m pytest tests/test_task_001.py -v
 
 test-task-002:
-	python -m pytest tests/test_task_002.py -v
+	python3 -m pytest tests/test_task_002.py -v
 
 test-task-003:
-	python -m pytest tests/test_task_003.py -v
+	python3 -m pytest tests/test_task_003.py -v
 
 test-task-004:
-	python -m pytest tests/test_task_004.py -v
+	python3 -m pytest tests/test_task_004.py -v
 
 test-task-005:
-	python -m pytest tests/test_task_005.py -v
+	python3 -m pytest tests/test_task_005.py -v
 
 # Demo
 demo:
@@ -32,9 +32,9 @@ demo:
 
 # Benchmark
 benchmark:
-	python benchmark/eval.py
+	python3 benchmark/eval.py
 
 # Lint
 lint:
-	python -m flake8 guardrails/ --max-line-length=100
-	python -m flake8 benchmark/ --max-line-length=100
+	python3 -m flake8 guardrails/ --max-line-length=100
+	python3 -m flake8 benchmark/ --max-line-length=100
