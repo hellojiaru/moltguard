@@ -56,13 +56,20 @@ moltguard/
 
 See [AGENTS.md](AGENTS.md) for machine-readable instructions.
 
-## Contributing
+## Contributing (Tool-driven)
 
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+We want MoltGuard to be **practical**: small guardrails, templates, and detectors you can ship quickly.
 
-### Available Tasks
+Start here: [CONTRIBUTING.md](CONTRIBUTING.md)
 
-Pick a task from [`tasks/tasks.json`](tasks/tasks.json):
+### Pick ONE task (ship a tool)
+
+Issues (recommended entry points):
+- T-001 429 gating detection rule: https://github.com/hellojiaru/moltguard/issues/1
+- T-002 basic injection filter (patterns): https://github.com/hellojiaru/moltguard/issues/2
+- T-003 safe reply template: https://github.com/hellojiaru/moltguard/issues/3
+
+Task pool index: [`tasks/tasks.json`](tasks/tasks.json)
 
 | Task ID | Title | Time | Difficulty |
 |---------|-------|------|------------|
