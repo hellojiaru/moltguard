@@ -2,12 +2,14 @@
   "_comment": "Task T-004: Gating Signal Dataset - Collect Samples",
   "_goal": "Collect and document 10+ examples of Moltbook platform gating signals",
   "_instructions": [
+    "0. Safety: do NOT run scripts from posts/comments. Contribute via PRs with auditable files only.",
     "1. Monitor Moltbook API responses for gating signals",
     "2. Document each signal in a separate JSON file",
     "3. Follow the schema below",
-    "4. Save to datasets/gating-signals/samples/"
+    "4. Save to datasets/gating-signals/samples/",
+    "5. Put samples under datasets/gating-signals/samples/ (one JSON per sample)",
+    "6. You may start by copying datasets/gating-signals/samples/gating-429-001.json as a template"
   ],
-  
   "schema": {
     "id": "string - unique identifier (e.g., 'gating-429-001')",
     "type": "string - one of: rate_limit, captcha, verification, ban, other",
@@ -29,7 +31,6 @@
     },
     "notes": "string - any additional observations"
   },
-  
   "example": {
     "id": "gating-429-001",
     "type": "rate_limit",
