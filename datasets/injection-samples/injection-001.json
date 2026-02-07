@@ -1,0 +1,24 @@
+{
+  "id": "injection-001",
+  "category": "instruction_override",
+  "severity": "medium",
+  "source": {
+    "type": "comment",
+    "sanitized": true,
+    "original_length": 0
+  },
+  "content": {
+    "raw": "[SANITIZED: example pattern only — remove payloads/commands/URLs]",
+    "patterns": [
+      "ignore previous instructions",
+      "pretend to be system"
+    ],
+    "intent": "Override the agent's constraints"
+  },
+  "detection": {
+    "obvious": true,
+    "obfuscation": [],
+    "bypass_attempts": []
+  },
+  "notes": "Template sample. Replace with real sanitized patterns from public content."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gating-429-001",
+  "type": "rate_limit",
+  "timestamp": "2026-02-07T00:00:00Z",
+  "trigger": {
+    "action": "api_request",
+    "frequency": "multiple requests in a short window",
+    "context": "Example placeholder sample; replace with real sanitized observations"
+  },
+  "response": {
+    "status_code": 429,
+    "headers": {
+      "Retry-After": "60"
+    },
+    "body": {
+      "error": "rate_limit_exceeded",
+      "message": "[SANITIZED: short description only]"
+    }
+  },
+  "resolution": {
+    "action_taken": "wait",
+    "wait_time": 60,
+    "success": true
+  },
+  "notes": "Template sample. Replace with real data; keep it sanitized."
+}
